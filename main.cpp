@@ -5,13 +5,43 @@ using namespace std;
 
 class convert{
     public:
-    
+    class Weight{
+        public:
+        int kgTOgm(int a){
+            return a*1000;
+        }
+    };
+    class Length{
+        public:
+
+    };
+    class Number{
+        public:
+
+    };
+    class Currency{
+        public:
+
+    };
+    class Volume{
+        public:
+
+    };
+    class Speed{
+        public:
+
+    };
+    class Time{
+        public:
+
+    };
 };
 
 int main()
 {
     system("cls");
     int choice;
+    convert c;
     cout << "Welcome To Unit converter" << endl;
     do
     {
@@ -39,7 +69,8 @@ int main()
         switch (choice)
         {
         case 1:
-            
+            convert::Weight w;
+            cout<<w.kgTOgm(1)<<"gm"<<endl;
             break;
         
         default:
