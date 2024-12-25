@@ -1,42 +1,45 @@
 #include <iostream>
 #include <cstdlib>
 #include <limits>
+#include "converter.h"
 using namespace std;
 
 class convert{
+    int a;
     public:
-    class Weight{
-        public:
-        int kgTOgm(int a){
-            return a*1000;
-        }
-    };
-    class Length{
-        public:
-
-    };
-    class Number{
-        public:
-
-    };
-    class Currency{
-        public:
-
-    };
-    class Volume{
-        public:
-
-    };
-    class Speed{
-        public:
-
-    };
-    class Time{
-        public:
-
-    };
+    void input(){
+        cout<<"ENter value : ";
+        cin>>a;
+    }
 };
 
+class Weight:public convert{
+    public:
+    void menu(){
+        int sub_choice;
+        do
+        {
+            cout<<"1. kg to gm"<<endl;
+            cout<<"2. gm to kg"<<endl;
+            cout<<"3. mg to kg"<<endl;
+            cout<<"4. kg to mg"<<endl;
+            cout<<"5. Exit "<<endl;
+            cin>>sub_choice;
+            switch (sub_choice)
+            {
+            case 1:
+                gmTokg();
+                break;
+            
+            default:
+                break;
+            }
+        } while (sub_choice!=5);   
+    }
+    void gmTokg(){
+        cout<<"In building"<<endl;
+    }
+};
 int main()
 {
     system("cls");
@@ -45,6 +48,7 @@ int main()
     cout << "Welcome To Unit converter" << endl;
     do
     {
+        cout<<iam<<endl;
         cout << "1. Weight " << endl;
         cout << "2. length " << endl;
         cout << "3. Numbers " << endl;
@@ -69,8 +73,7 @@ int main()
         switch (choice)
         {
         case 1:
-            convert::Weight w;
-            cout<<w.kgTOgm(1)<<"gm"<<endl;
+            cout<<"gm"<<endl;
             break;
         
         default:
