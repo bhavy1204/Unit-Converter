@@ -4,6 +4,10 @@ using namespace std;
 class Weight{
     int a;
     public:
+    void input(){
+        cout<<"ENter value : ";
+        cin>>a;
+    }
     void menu(){
         int sub_choice;
         do
@@ -17,6 +21,7 @@ class Weight{
             switch (sub_choice)
             {
             case 1:
+                input();
                 gmTokg();
                 break;
             
