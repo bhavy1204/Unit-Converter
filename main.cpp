@@ -17,14 +17,22 @@ int main()
     cout << "Welcome To Unit converter" << endl;
     do
     {
-        cout << "1. Weight " << endl;
-        cout << "2. length " << endl;
-        cout << "3. Numbers " << endl;
-        cout << "4. Currency " << endl;
-        cout << "5. volume " << endl;
-        cout << "6. speed " << endl;
-        cout << "7. time " << endl;
-        cout << "8. Exit " << endl;
+        // cout.width(15);
+        cout << "1. Weight ";
+        cout.width(15);
+        cout << "2. length ";
+        cout.width(15);
+        cout << "3. Numbers ";
+        cout.width(15);
+        cout << "4. Currency ";
+        cout.width(15);
+        cout << "\n5. volume ";
+        cout.width(15);
+        cout << "6. speed ";
+        cout.width(15);
+        cout << "7. time";
+        cout.width(15);
+        cout << "8. Exit \n>>";
         cin >> choice;
         while (true)
         {
