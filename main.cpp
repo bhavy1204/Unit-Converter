@@ -20,7 +20,7 @@ int main()
     cout << "Welcome To Unit converter" << endl;
     do
     {
-        // cout.width(15);
+        //Menu for choosing nature of conversion
         cout << "1. Weight ";
         cout.width(15);
         cout << "2. length ";
@@ -37,6 +37,7 @@ int main()
         cout.width(15);
         cout << "8. Exit \n>>";
         cin >> choice;
+        //Function for valid user input
         while (true)
         {
             if (cin.fail())
@@ -55,7 +56,9 @@ int main()
             Weight w;
             w.menu();
             break;
-        
+        case 4:
+            currency c;
+            break;
         default:
             break;
         }
